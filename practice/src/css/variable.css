@@ -1,0 +1,91 @@
+@font-face {
+    font-family: Roboto;
+    src: url("/src/assets/fonts/Roboto-Regular.ttf");
+  }
+  :root {
+    --nav-bg: #4b4b4b;
+    --color-logo: #ebcb80;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  html,
+  body,
+  figure {
+    margin: 0;
+    font-family: Roboto;
+  }
+  
+  ul,
+  ol {
+    list-style-type: none;
+  }
+  
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  
+  .title--main {
+    font-size: 44px;
+    color: var(--text-color);
+    text-align: center;
+  }
+  .title--main__tablet {
+    font-size: 32px;
+    color: var(--text-color);
+    text-align: center;
+  }
+  .sub-title {
+    font-size: 16px;
+    color: var(--text-color);
+    /* text-align: center; */
+  }
+  
+  .sub-title__header {
+    font-size: 16px;
+    color: var(--text-color);
+  }
+  
+  @media only screen and (min-width:46.25em) and (max-width: 64em) {
+    .text1__tablet {
+      font-size: 12px;
+    }
+    .title--main__tablet {
+      font-size: 32px;
+      color: var(--text-color);
+      text-align: center;
+    }
+    .sub-title__tablet {
+      font-size: 13px;
+      color: var(--text-color);
+    }
+  }
+  
+  @media screen and (max-width:376px) {
+    .title--main__mobile{
+      font-size: 20px;
+    }
+  
+    .text1__mobile {
+      font-size: 12px;
+    }
+  
+    .sub-title__mobile {
+      font-size: 13px;
+      color: var(--text-color);
+    }
+  
+    .icon{
+      width: 50px;
+      height: 46px;
+    }
+  }
