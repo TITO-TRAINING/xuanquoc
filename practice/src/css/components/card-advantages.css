@@ -1,0 +1,106 @@
+@import url("../variable.css");
+
+.card {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap-card {
+  padding-top: 40px;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 18px;
+  color: var(--color-logo);
+  margin-top: 30px;
+}
+
+.img-main {
+  margin-bottom: 32px;
+}
+
+.card-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image {
+  width: 64px;
+  height: 59px;
+}
+
+.card-image__advantages {
+  width: 100%;
+  height: 100%;
+}
+
+.extesion {
+  width: 100%;
+  height: 24px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.findMore {
+  width: 198px;
+  background-color: var(--color-logo);
+  text-align: center;
+  color: var(--nav-bg);
+  border-radius: 50px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.description-detail {
+  width: 100%;
+  height: 72px;
+  text-align: center;
+}
+
+
+@media only screen and (min-width:37.5em) and (max-width: 64.0625em) {
+    .extesion{
+    width: 100%;
+    font-size: 13px;
+    } 
+
+    .description-detail {
+    width: 100%;
+    height: 32px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+    .findMore{
+    width: 140px;
+    padding: 7px;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 37.4375em){
+    .sub-title__advantages{
+        width: 90%;
+    }
+    .extesion{
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .description-detail {
+        width: 90%;
+        height: 32px;
+        font-size: 12px;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+    .findMore{
+        width: 60%;
+        padding: 8px;
+        margin: 20px 0;
+    }
+}
