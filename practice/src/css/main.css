@@ -13,7 +13,7 @@ main {
   width: 100%;
 }
 
-figure {
+figure,picture {
   margin: 0;
 }
 
@@ -354,12 +354,168 @@ figure {
   font-size: 16px;
 }
 
+.contact {
+  padding-bottom: 80px;
+}
+
+.contact-content__wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-contact {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-title {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.contact-location {
+  display: flex;
+  flex-direction: row;
+}
+
+.info-location {
+  width: 234px;
+  margin-left: 12px;
+}
+
+.icon-location__contact {
+  margin-top: 4px;
+}
+
+.contact-email {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-mail__contact {
+  width: 20px;
+}
+
+.mail {
+  margin-left: 4px;
+  width: 234px;
+  height: 24px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.textArea {
+  width: 97%;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+
+.label_title1 {
+  margin-left: 8px;
+}
+.contact-phone {
+  display: flex;
+  flex-direction: row;
+  margin-top: 12px;
+}
+
+.group-phoneNumber {
+  margin-left: 11px;
+}
+
+.title-contact {
+  margin: 40px 0;
+}
+
+.form-contact {
+  width: 35%;
+  height: 414px;
+  padding: 42px 34px;
+  border: 2.13px solid #e6e6e6;
+  box-shadow: 0px 4px 9px 0px #00000033;
+  margin: 0 30px;
+}
+
+.form-contact__NameMail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.name-input {
+  display: flex;
+  flex-direction: column;
+  width: 46%;
+}
+
+.input-name {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #999999;
+  padding: 4px;
+}
+
+.email-input {
+  width: 46%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-email {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #999999;
+  padding: 4px;
+}
+
+.submit-contact {
+  text-align: center;
+  margin: 66px 0;
+  width: 210px;
+  border: 1px solid #ebcb80;
+  border-radius: 50px;
+  background-color: #ebcb80;
+  margin: 66px auto;
+  padding: 14px;
+}
+
+.credit-title {
+  margin: 0 0 20px;
+}
+
+.credit-description {
+  width: 236px;
+  height: 96px;
+  line-height: 20px;
+}
+
+.social-title {
+  margin: 26px 0;
+}
+
+.group--icon__social {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: start;
+}
+
+.social-icon {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
 @media  only screen and (min-width:37.5em) and (max-width: 64.0625em){
     .team{
         display: flex;
         flex-direction: row;
     }
-  
+
       .box1{
         display: flex;
         flex-direction: column;
@@ -402,6 +558,79 @@ figure {
       gap: 20px;
     }
 
+    .contact{
+      width: 100%;
+    }
+    
+    .form-contact{
+      width: 30%;
+      padding: 33px 34px;
+      order: 1;
+    }
+
+    .information-contact{
+      order: 2;
+      width: 30%;
+    }
+
+    .contact-location{
+      width: 90%;
+    }
+
+    .credits{
+      order: 3;
+      width: 30%;
+    }
+    .form-contact__NameMail{
+      width: 100%;
+      display: flex;
+      margin: 0 auto;
+      justify-content: space-between;
+    }
+
+    .name-input{
+      width: 46%;
+    }
+
+    .input-name{
+      width: 100%;
+      
+      padding: 4px;
+    }
+
+    .email-input{
+      width: 46%;
+    }
+
+    .input-email{
+      width: 100%;
+      padding: 4px;
+    }
+
+    .label_title1{
+      margin: 0;
+    }
+    .textArea{
+      margin: 12px auto;
+      width: 100%;
+    }
+
+    .submit-contact {
+      text-align: center;
+      width: 60%;
+      margin: 55px auto;
+      padding: 6px;
+  }
+
+    .container-contact{
+      width: 100%;
+    }
+
+    .credit-description {
+      width: 100%;
+      height: 96px;
+      line-height: 20px;
+  }
 }
 
 
@@ -511,7 +740,60 @@ figure {
   .form-submit{
     margin-top: 20px;
     padding: 8px;
-  .advantages{
+  }
+
+  .contact-content__wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .information-contact{
+    order: 2;
+    margin-left: 54px;
+  }
+
+  .form-contact{
+    order: 1;
+    width: 75%;
+    padding: 20px 25px;
+    margin: 0 auto;
+    height: 40%;
+    box-shadow: none;
+    border: none;
+  }
+  .message{
+    height: 100px;
+  }
+  .name-input{
+    width: 46%;
+  }
+
+  .input-name{
+    width: 100%;
+    padding: 4px;
+  }
+
+  .email-input{
+    width: 46%;
+  }
+
+  .input-email{
+    width: 100%;
+    padding: 4px;
+  }
+  .textArea{
+    width: 98%;
+    margin: 7px;
+    height: 100%;
+  }
+
+
+  .credits{
+    order: 3;
+    width: 85%;
+    margin-left: 54px;
+    margin-top: 20px;
+ .advantages{
     height: 1590px;
   }
 }
