@@ -152,7 +152,8 @@ body {
   margin: 0 80px;
 }
 /*>=740 and <=1023*/
-@media only screen and (min-width:46.25em) and (max-width: 64em) {
+
+@media only screen and (min-width:37.5em) and (max-width: 64em) {
     .container{
         width: 100%;
     }
@@ -218,7 +219,8 @@ body {
   }
 }
 
-@media only screen and (max-width:46.1825em) {
+@media only screen and (max-width: 37.4375em) {
+
   .menu{
     display: none;
   }
