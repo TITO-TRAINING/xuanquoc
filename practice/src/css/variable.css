@@ -55,7 +55,7 @@
     color: var(--text-color);
   }
   
-  @media only screen and (min-width:46.25em) and (max-width: 64em) {
+  @media only screen and (min-width:37.5em) and (max-width: 64em) {
 
     .text1__tablet {
       font-size: 12px;
@@ -70,8 +70,9 @@
       color: var(--text-color);
     }
   }
-  
+
   @media screen and (max-width:37.4375em) {
+
     .title--main__mobile{
       font-size: 20px;
     }
