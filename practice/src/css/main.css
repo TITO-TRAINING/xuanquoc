@@ -164,7 +164,6 @@ figure {
   font-size: 16px;
   letter-spacing: 0em;
   line-height: 24px;
-
   text-align: center;
   font-size: 12px;
   font-family: Roboto;
@@ -274,15 +273,86 @@ figure {
   margin: 0;
 }
 
-@media  only screen and (min-width:37.5em) and (max-width: 64.0625em){
+.create-account {
+  width: 100%;
+}
 
-  figure{
-    margin: 0;
-    width: 100%;
-  }
-    .icon-header{
-      margin: 0;
-    }
+.account-container {
+  background-image: url("../assets/images/desktop/Mask.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 588px;
+  background-size: 1533px 588px;
+  position: relative;
+}
+
+.title-account {
+  color: #ffffff;
+  padding-top: 60px;
+}
+
+.form-wrapper {
+  width: 360px;
+  height: 384px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--nav-bg);
+  align-items: center;
+  margin: 30px auto;
+  border-radius: 8px;
+}
+.form-create {
+  width: 360px;
+  height: 384px;
+  position: absolute;
+  background: linear-gradient(
+    223.49deg,
+    rgba(0, 0, 0, 0.0001) 4.85%,
+    rgba(0, 0, 0, 0.401127) 96.5%
+  );
+
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.form-create__title {
+  font-size: 18px;
+  border-radius: 8px;
+  color: var(--color-logo);
+  text-align: center;
+  margin: 20px;
+}
+.form-create__content {
+  text-align: center;
+}
+
+.form-a {
+  width: 256px;
+  font-size: 14px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  padding: 8px;
+  background-color: #999999;
+}
+
+.have-account {
+  position: absolute;
+  color: var(--color-logo);
+  top: 400px;
+  text-decoration: underline;
+}
+
+.form-submit {
+  position: absolute;
+  background-color: var(--color-logo);
+  top: 442px;
+  padding: 15px;
+  width: 198px;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 16px;
+}
 
 @media  only screen and (min-width:37.5em) and (max-width: 64.0625em){
     .team{
@@ -295,8 +365,8 @@ figure {
         flex-direction: column;
         width: 50%;
     }
-
-      .box2{
+  
+ .box2{
         display: flex;
         flex-direction: column;
         width: 50%;
@@ -334,11 +404,6 @@ figure {
 
 }
 
-@media only screen and (max-width: 37.4375em){
-    .icon-header{
-        margin: 0;
-    }
-}
 
 @media only screen and (max-width: 37.4375em){
     .team{
@@ -399,6 +464,7 @@ figure {
     .about-slider__icon{
       display: none;
     }
+
     .point-pagination {
       width: 1%;
       height: 6px;
@@ -406,6 +472,7 @@ figure {
       border-radius: 50%;
       margin: 0 4px;
   }
+
   .advantages{
     height: 1590px;
   }
@@ -424,6 +491,26 @@ figure {
     gap: 20px;
   }
 
+  .form-wrapper{
+    width: 80%;
+  }
+
+  .form-create{
+    width: 80%;
+  }
+
+  .form-a{
+    width: 80%;
+  }
+
+  .have-account{
+    top: 412px;
+    padding-top: 20px;
+  }
+
+  .form-submit{
+    margin-top: 20px;
+    padding: 8px;
   .advantages{
     height: 1590px;
   }
