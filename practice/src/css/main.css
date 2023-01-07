@@ -48,6 +48,82 @@ figure {
   justify-content: space-around;
 }
 
+
+.plan {
+  width: 100%;
+  height: 680px;
+  background-color: #4b4b4b;
+}
+
+.wrapper{
+  height: 60%;
+}
+
+.plan-content__wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+}
+
+.silver {
+  width: 30%;
+  background: linear-gradient(
+    225deg,
+    rgba(255, 255, 255, 0.496575) 0%,
+    rgba(255, 255, 255, 0.0001) 100%
+  );
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px #00000080;
+  color: #ffffff;
+}
+
+.silver .purchase {
+  background-color: var(--color-logo);
+  color: var(--nav-bg);
+  margin: 24px auto;
+}
+
+.gold {
+  width: 30%;
+  background: var(--color-logo);
+  margin: 0 24px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px #00000080;
+  color: var(--nav-bg);
+}
+
+.gold .card-title {
+  color: var(--nav-bg);
+}
+.gold .purchase {
+  background-color: var(--nav-bg);
+  color: #ffffff;
+  margin: 24px auto;
+}
+
+.platinium {
+  width: 30%;
+  background: linear-gradient(
+    223.49deg,
+    rgba(0, 0, 0, 0.0001) 4.85%,
+    rgba(0, 0, 0, 0.401127) 96.5%
+  );
+  background-blend-mode: multiply;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px #00000080;
+  color: #ffffff;
+}
+
+.platinium .purchase {
+  background-color: var(--color-logo);
+  color: var(--nav-bg);
+  margin: 24px auto;
+}
+
 @media  only screen and (min-width:37.5em) and (max-width: 64.0625em){
     .team{
         display: flex;
@@ -69,6 +145,23 @@ figure {
     .description__table {
         width: 70%;
     }
+
+
+    .wrapper{
+      height: 50%;
+    }
+    .silver .purchase{
+      width: 60%;
+    }
+
+    .gold .purchase{
+      width: 60%;
+    }
+
+    .platinium .purchase{
+      width: 60%;
+    }
+
 }
 
 @media only screen and (max-width: 37.4375em){
@@ -84,5 +177,45 @@ figure {
     .box2{
         display: flex;
         flex-direction: column;
+    }
+
+    .plan{
+      width: 100%;
+      height: 1452px;
+    }
+
+    .wrapper{
+      height: 100%;
+    }
+
+    .silver{
+      width: 50%;
+      margin: 20px auto;
+    }
+    .silver .purchase{
+      width: 60%;
+    }
+
+    .gold .purchase{
+      width: 60%;
+    }
+
+    .gold{
+      width: 50%;
+      margin: 20px auto;
+    }
+
+    .platinium .purchase{
+      width: 60%;
+    }
+
+    .platinium{
+      width: 50%;
+      margin: 20px auto;
+    }
+
+    .plan-content__wrapper{
+      display: flex;
+      flex-direction: column;
     }
 }

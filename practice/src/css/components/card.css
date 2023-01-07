@@ -1,0 +1,110 @@
+.card {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .wrap-card {
+    padding-top: 40px;
+    width: 100%;
+  }
+  .card-title {
+    text-align: center;
+    font-size: 18px;
+  }
+  .card-price__detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .dolar {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    line-height: 28.13px;
+    margin-bottom: 8px;
+  }
+  
+  .price {
+    font-family: Roboto;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: -0.0364em;
+    text-align: center;
+    margin: 18px 6px;
+  }
+  .year {
+    text-align: center;
+  }
+  
+  .personal-account {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .account {
+    padding: 2px 0;
+  }
+  
+  .data {
+    padding: 2px 0;
+  }
+  
+  .upload-perday {
+    padding: 2px 0;
+  }
+  
+  .purchase {
+    text-align: center;
+    width: 198px;
+    margin-top: 26px;
+    margin-left: 78px;
+    padding: 15px;
+    border-radius: 50px;
+  }
+  
+  @media only screen and (min-width:37.5em) and (max-width: 64.0625em) {
+    .card {
+      width: 100%;
+      height: 50%;
+    }
+  
+    .card-title {
+      font-size: 15px;
+      margin-bottom: none;
+    }
+  
+    .dolar {
+      display: flex;
+      align-items: center;
+      font-size: 11px;
+      line-height: 28.13px;
+      margin-bottom: 8px;
+    }
+  
+    .price {
+      font-family: Roboto;
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 48px;
+      letter-spacing: -0.0364em;
+      text-align: center;
+      margin: 10px 6px;
+    }
+  
+    .purchase {
+      width: 100%;
+      margin-left: 36px;
+      padding: 10px;
+    }
+  }
+  
+  @media  only screen and (max-width: 37.4375em) {
+    .card{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
