@@ -512,7 +512,11 @@ figure {
   margin-bottom: 20px;
 }
 
-@media  only screen and (min-width:37.5em) and (max-width: 64.0625em){
+@media  only screen and (min-width:20.1em) and (max-width: 64.0625em){
+
+  .container{
+    width: 100%;
+  }
 
   figure{
     margin: 0;
@@ -542,6 +546,7 @@ figure {
     }
 
     .description__table {
+      font-size: 12px;
         width: 70%;
     }
 
@@ -565,7 +570,7 @@ figure {
     }
     .location-image__wrapper{
       display: grid;
-      grid-template-columns: 20% 20% 20%;
+      grid-template-columns: 24% 24% 24%;
       grid-template-rows: 44% 45%;
       justify-content: center;
       gap: 20px;
@@ -598,12 +603,20 @@ figure {
       order: 1;
     }
 
+    .contact-email{
+      font-size: 12px;
+    }
+
+    .credit-description{
+      font-size: 12px;
+    }
     .information-contact{
       order: 2;
       width: 30%;
     }
 
     .contact-location{
+      font-size: 12px;
       width: 90%;
     }
 
@@ -663,10 +676,12 @@ figure {
   }
 }
 
-@media only screen and (max-width: 37.4375em){
+@media only screen and (max-width: 20em){
+  
     .icon-header{
         margin: 0;
     }
+
     .team{
         display: flex;
         flex-direction: column;
@@ -694,28 +709,31 @@ figure {
     }
 
     .silver{
-      width: 50%;
+      width: 70%;
       margin: 20px auto;
     }
     .silver .purchase{
       width: 60%;
+      padding: 4%;
     }
 
     .gold .purchase{
       width: 60%;
+      padding:  4%;
     }
 
     .gold{
-      width: 50%;
+      width: 70%;
       margin: 20px auto;
     }
 
     .platinium .purchase{
       width: 60%;
+      padding: 4%;
     }
 
     .platinium{
-      width: 50%;
+      width: 70%;
       margin: 20px auto;
     }
 
@@ -725,6 +743,9 @@ figure {
       justify-content: flex-start;
     }
 
+    .personal-account{
+      font-size: 12px;
+    }
     .about-slider__icon{
       display: none;
     }
@@ -751,7 +772,7 @@ figure {
   .location-image__wrapper{
     display: grid;
     grid-template-rows: 29% 29% 29%;
-    grid-template-columns: 24% 24% ;
+    grid-template-columns: 32% 32% ;
     justify-content: center;
     gap: 20px;
   }
@@ -822,11 +843,32 @@ figure {
     margin: 7px;
     height: 100%;
   }
-
   .credits{
     order: 3;
     width: 85%;
     margin-left: 54px;
     margin-top: 20px;
   }
+
+}
+@media only screen and (max-width: 20em){
+  .wrap-card{
+    padding-bottom: 12px;
+    padding-top: 10px;
+  }
+  .findMore{
+    margin-top: 24%;
+  }
+
+  .contact-footer {
+    width: 50%
+    ;
+  }
+  .form-submit {
+    margin-top: 20px;
+    padding: 8px;
+    margin-top: 67%;
+    border-radius: 50px;
+    width: 46%;
+}
 }
