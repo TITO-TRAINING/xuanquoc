@@ -53,6 +53,10 @@ hr{
   color: #ffffff;
 }
 
+.contact-footer{
+  margin-left: 12px;
+}
+
 .footer-bottom__link {
   display: flex;
   justify-content: space-between;
@@ -62,6 +66,7 @@ hr{
 .name-company {
   opacity: 50.31%;
   color: #ffffff;
+  margin-left: 12px;
 }
 
 .footer-page {

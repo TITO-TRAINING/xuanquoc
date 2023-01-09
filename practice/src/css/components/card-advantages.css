@@ -45,13 +45,14 @@
 }
 
 .findMore {
-  width: 198px;
+  width: 44%;
   background-color: var(--color-logo);
   text-align: center;
   color: var(--nav-bg);
   border-radius: 50px;
   padding: 15px;
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .description-detail {
@@ -75,9 +76,9 @@
   }
 
     .findMore{
-    width: 140px;
+    width: 58%;
     padding: 7px;
-    margin-top: 30px;
+    margin: 30px auto 50px;
   }
 }
 
