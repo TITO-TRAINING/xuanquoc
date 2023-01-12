@@ -132,8 +132,8 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
   display: grid;
-  grid-template-columns: 10% 10% 10%;
-  gap: 72px;
+  grid-template-columns: 14% 14% 14%;
+  gap: 10%;
   justify-content: center;
 }
 
@@ -154,7 +154,7 @@ body {
   margin: 0 80px;
 }
 /*>=740 and <=1023*/
-@media only screen and (min-width:37.5em) and (max-width: 64em) {
+@media only screen  and (max-width: 1200px) {
   .container{
     width: 100%;
   }
@@ -209,7 +209,11 @@ body {
     background-position: center center;
     position: relative;
   }
-
+  
+  .header-main__service {
+    display: grid;
+    grid-template-columns: 10% 10% 10%;
+  }
   .overlay {
     height: 100%;
   }
@@ -220,7 +224,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 37.4375em) {
+@media only screen and (max-width: 767px) {
   .header-main__logo{
     margin-left: 20px;
   }

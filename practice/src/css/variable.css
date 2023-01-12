@@ -5,6 +5,7 @@
   :root {
     --nav-bg: #4b4b4b;
     --color-logo: #ebcb80;
+    --text-white: #ffffff;
     box-sizing: border-box;
   }
   
@@ -14,9 +15,10 @@
   
   html,
   body,
-  figure {
+  figure,article {
     margin: 0;
     font-family: Roboto;
+    width: 100%;
   }
   
   ul,
@@ -55,7 +57,7 @@
     color: var(--text-color);
   }
   
-  @media only screen and (min-width:37.5em) and (max-width: 64em) {
+  @media only screen  and (max-width: 1200px) {
     .text1__tablet {
       font-size: 12px;
     }
@@ -70,13 +72,13 @@
     }
   }
   
-  @media screen and (max-width:37.4375em) {
+  @media screen and (max-width:767px) {
     .title--main__mobile{
       font-size: 20px;
     }
   
     .text1__mobile {
-      font-size: 12px;
+      font-size: 14px;
     }
   
     .sub-title__mobile {

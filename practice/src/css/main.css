@@ -2,7 +2,12 @@
 @import url("./components/team-profile.css");
 @import url("./components/card-advantages.css");
 @import url("./components/card.css");
-
+@import url("./components/listIcon.css");
+@import url("./components/plan.css");
+@import url("./components/business.css");
+@import url("./components/places.css");
+@import url("./components/account.css");
+@import url("./components/contact.css");
 html,
 body {
   font-family: Roboto;
@@ -11,11 +16,6 @@ body {
 
 main {
   width: 100%;
-}
-
-
-figure {
-  margin: 0;
 }
 
 .img-main{
@@ -27,47 +27,22 @@ figure {
 .end{
   margin: 0;
 }
-.team {
-  padding-bottom: 44px;
-}
-.title_price {
-  color: #ffffff;
-  padding: 56px;
-}
-.main-team__title {
-  margin: 30px 0;
-}
+
+
 .box1 {
+  width: 98%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin: 0 auto;
 }
 
 .box2 {
+  width: 98%;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-
-.plan {
-  width: 100%;
-  height: 100%;
-  padding-bottom: 7%;
-  background-color: #4b4b4b;
-}
-
-.wrapper{
-  height: 60%;
-}
-
-.plan-content__wrapper {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: 100%;
 }
 
 .silver {
@@ -102,7 +77,7 @@ figure {
 }
 .gold .purchase {
   background-color: var(--nav-bg);
-  color: #ffffff;
+  color: var(--text-white);
   margin: 24px auto;
 }
 
@@ -116,7 +91,7 @@ figure {
   background-blend-mode: multiply;
   border-radius: 8px;
   box-shadow: 0px 8px 16px 0px #00000080;
-  color: #ffffff;
+  color: var(--text-white);
 }
 
 .platinium .purchase {
@@ -125,433 +100,25 @@ figure {
   margin: 24px auto;
 }
 
-.name-business {
-  font-family: Roboto;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
-  letter-spacing: 0em;
-  text-align: left;
-  width: 230px;
-  height: 27px;
-  margin-left: 22px;
-}
-
-.business-avatar__wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding-top: 7%;
-  margin-bottom: 0;
-}
-
-.business-avatar {
-  border: 4px solid var(--color-logo);
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-
-.business_description {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.content-business {
-  width: 60%;
-  font-family: Roboto;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0em;
-  line-height: 24px;
-  padding-bottom: 24px;
-  text-align: center;
-  font-size: 12px;
-  font-family: Roboto;
-  line-height: 14px;
-  font-weight: 400;
-  text-align: center;
-  letter-spacing: 0em;
-  margin-top: 24px;
-}
-
-.about-slider__icon {
-  margin: 0 100px 50px;
-  border: 2px solid #e6e6e6;
-  border-radius: 50%;
-  width: 52px;
-  position: relative;
-  height: 52px;
-}
-
-.icon-business {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  height: 50%;
-  transform: translate(50%, 50%);
-  background-color: transparent;
-}
-
-.slider-pagination {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 100px;
-}
-
-.point-pagination {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  border: 2px solid var(--nav-bg);
-  margin: 0px 4px;
-}
-
-.point-pagination__middle {
-  background-color: var(--nav-bg);
-}
-
-.advantages {
-  max-width: 100%;
-  padding-bottom: 8%;
-  background-color: #4b4b4b;
-}
-
-.title_advantages {
-  padding: 56px 56px 0;
-}
-
-.title_advantages {
-  color: #ffffff;
-}
-
-.sub-title__advantages {
-  width: 50%;
-  height: 48px;
-  margin: 25px auto;
-  color: #ffffff;
-}
-
-.location-image {
-  width: 100%;
-  margin: 0 auto;
-  padding-bottom: 80px;
-}
-
-.place-title {
-  margin: 30px 0 0;
-  color: var(--nav-bg);
-}
-
-.location {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
-.name-location {
-  width: 141px;
-  height: 27px;
-  font-size: 18px;
-  text-align: center;
-  color: var(--nav-bg);
-}
-
-
-.location-image__wrapper {
-  display: grid;
-  grid-template-columns:20% 20% 20%;
-  grid-template-rows: 50% 54%;
-  margin: 0 auto;
-  gap: 20px;
-  justify-content: center;
-}
-
-.icon-header{
-  margin: 0;
-}
-
-.create-account {
-  width: 100%;
-}
-
-.account-container {
-  background-image: url("../assets/images/desktop/Mask.png");
-  width: 100%;
-  background-repeat: no-repeat;
-  padding-bottom: 20px;
-  background-size: 100% 100%;
-  position: relative;
-}
-
-.title-account {
-  color: #ffffff;
-  padding-top: 60px;
-}
-
-.form-wrapper {
-  width: 34%;
-  height: 512px;
-  display: flex;
-  justify-content: center;
-  background-color: var(--nav-bg);
-  align-items: center;
-  margin: 30px auto;
-  border-radius: 8px;
-}
-.form-create {
-  width: 34%;
-  height: 512px;
-  position: absolute;
-  background: linear-gradient(
-    223.49deg,
-    rgba(0, 0, 0, 0.0001) 4.85%,
-    rgba(0, 0, 0, 0.401127) 96.5%
-  );
-
-  display: flex;
-  flex-direction: column;
-  border-radius: 8px;
-}
-
-.form-create__title {
-  font-size: 18px;
-  border-radius: 8px;
-  color: var(--color-logo);
-  text-align: center;
-  margin: 20px;
-}
-.form-create__content {
-  text-align: center;
-}
-
-.form-a {
-  width: 78%;
-  font-size: 14px;
-  border-radius: 4px;
-  margin-bottom: 24px;
-  padding: 8px;
-  background-color: #999999;
-}
-
-.have-account {
-  position: absolute;
-  color: var(--color-logo);
-  padding-top: 8%;
-  text-decoration: underline;
-}
-
-.form-submit {
-  position: absolute;
-  background-color: var(--color-logo);
-  margin-top: 18%;
-  padding: 15px;
-  width: 14%;
-  text-align: center;
-  border-radius: 50px;
-  font-size: 16px;
-}
-
-.contact {
-  padding-bottom: 80px;
-}
-
-.contact-content__wrapper {
-  display: flex;
-  justify-content: space-around;
-}
-
-.container-contact {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.contact-title {
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
-.contact-location {
-  display: flex;
-  flex-direction: row;
-}
-
-.info-location {
-  width: 234px;
-  margin-left: 12px;
-}
-
-.icon-location__contact {
-  margin-top: 4px;
-}
-
-.contact-email {
-  margin-top: 12px;
-  display: flex;
-  flex-direction: row;
-}
-
-.icon-mail__contact {
-  width: 20px;
-}
-
-.mail {
-  margin-left: 4px;
-  width: 234px;
-  height: 24px;
-}
-
-.message {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-}
-
-.textArea {
-  width: 97%;
-  border-radius: 4px;
-  margin-left: 8px;
-}
-
-.label_title1 {
-  margin-left: 8px;
-}
-.contact-phone {
-  display: flex;
-  flex-direction: row;
-  margin-top: 12px;
-}
-
-.group-phoneNumber {
-  margin-left: 11px;
-}
-
-.title-contact {
-  margin: 40px 0;
-}
-
-.form-contact {
-  width: 35%;
-  height: 414px;
-  padding: 42px 34px;
-  border: 2.13px solid #e6e6e6;
-  box-shadow: 0px 4px 9px 0px #00000033;
-  margin: 0 30px;
-}
-
-.form-contact__NameMail {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.name-input {
-  display: flex;
-  flex-direction: column;
-  width: 46%;
-}
-
-.input-name {
-  width: 100%;
-  border-radius: 4px;
-  border: 1px solid #999999;
-  padding: 4px;
-}
-
-.email-input {
-  width: 46%;
-  display: flex;
-  flex-direction: column;
-}
-
-.input-email {
-  width: 100%;
-  border-radius: 4px;
-  border: 1px solid #999999;
-  padding: 4px;
-}
-
-.submit-contact {
-  text-align: center;
-  margin: 66px 0;
-  width: 210px;
-  border: 1px solid #ebcb80;
-  border-radius: 50px;
-  background-color: #ebcb80;
-  margin: 66px auto;
-  padding: 14px;
-}
-
-.credit-title {
-  margin: 0 0 20px;
-}
-
-.credit-description {
-  width: 236px;
-  height: 96px;
-  line-height: 20px;
-}
-
-.social-title {
-  margin: 26px 0;
-}
-
-.group--icon__social {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: start;
-}
-
-.social-icon {
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-@media  only screen and (min-width:20.1em) and (max-width: 64.0625em){
-
-  .container{
+@media  only screen  and (max-width: 1200px){
+    .container{
     width: 100%;
-  }
-
-  figure{
-    margin: 0;
-    width: 100%;
-  }
-    .icon-header{
-      margin: 0;
-    }
-
-    .team{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
     }
   
     .box1{
         display: flex;
         flex-direction: column;
-        width: 48%;
-        padding-left: 12px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
   
     .box2{
         display: flex;
         flex-direction: column;
-        width: 50%;
-    }
-
-    .description__table {
-      font-size: 12px;
-        width: 70%;
-    }
-
-    .wrapper{
-      height: 50%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
     .silver .purchase{
       width: 60%;
@@ -564,148 +131,17 @@ figure {
     .platinium .purchase{
       width: 60%;
     }
-
-    .about-slider__icon{
-      display: none;
-    }
-    .location-image__wrapper{
-      display: grid;
-      grid-template-columns: 24% 24% 24%;
-      grid-template-rows: 44% 45%;
-      justify-content: center;
-      gap: 20px;
-    }
-    
-    .form-wrapper{
-      width: 36%;
-      height: 414px;
-    }
-
-    .form-create{
-      width: 36%;
-      height: 414px;
-    }
-
-    .form-submit{
-      margin-top: 25%;
-    }
-
-    .have-account {
-      padding-top: 10%;
-    }
-    .contact{
-      width: 100%;
-    }
-    
-    .form-contact{
-      width: 30%;
-      padding: 33px 34px;
-      order: 1;
-    }
-
-    .contact-email{
-      font-size: 12px;
-    }
-
-    .credit-description{
-      font-size: 12px;
-    }
-    .information-contact{
-      order: 2;
-      width: 30%;
-    }
-
-    .contact-location{
-      font-size: 12px;
-      width: 90%;
-    }
-
-    .credits{
-      order: 3;
-      width: 30%;
-    }
-    .form-contact__NameMail{
-      width: 100%;
-      display: flex;
-      margin: 0 auto;
-      justify-content: space-between;
-    }
-
-    .name-input{
-      width: 46%;
-    }
-
-    .input-name{
-      width: 100%;
-      
-      padding: 4px;
-    }
-
-    .email-input{
-      width: 46%;
-    }
-
-    .input-email{
-      width: 100%;
-      padding: 4px;
-    }
-
-    .label_title1{
-      margin: 0;
-    }
-    .textArea{
-      margin: 12px auto;
-      width: 100%;
-    }
-
-    .submit-contact {
-      text-align: center;
-      width: 60%;
-      margin: 55px auto;
-      padding: 6px;
-  }
-
-    .container-contact{
-      width: 100%;
-    }
-
-    .credit-description {
-      width: 100%;
-      height: 96px;
-      line-height: 20px;
-  }
 }
 
-@media only screen and (max-width: 20em){
-  
-    .icon-header{
-        margin: 0;
-    }
-
-    .team{
-        display: flex;
-        flex-direction: column;
-    }
+@media only screen and (max-width: 767px){
     .box1{
         display: flex;
         flex-direction: column;
-        margin-left: 12px;
     }
 
     .box2{
         display: flex;
         flex-direction: column;
-        margin-left: 12px;
-    }
-
-    .plan{
-      width: 100%;
-      height: 100%;
-      padding-bottom: 16%;
-    }
-
-    .wrapper{
-      height: 100%;
     }
 
     .silver{
@@ -736,139 +172,5 @@ figure {
       width: 70%;
       margin: 20px auto;
     }
-
-    .plan-content__wrapper{
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-    }
-
-    .personal-account{
-      font-size: 12px;
-    }
-    .about-slider__icon{
-      display: none;
-    }
-
-    .point-pagination {
-      width: 1%;
-      height: 6px;
-      border: 2px solid var(--nav-bg);
-      border-radius: 50%;
-      margin: 0 4px;
-  }
-
-  .advantages{
-    height: 100%;
-  }
-
-  .sub-title__advantages{
-    width: 56%;
-    margin: 0 auto;
-    padding-top: 4%;
-  }
-  
-
-  .location-image__wrapper{
-    display: grid;
-    grid-template-rows: 29% 29% 29%;
-    grid-template-columns: 32% 32% ;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .form-wrapper{
-    width: 80%;
-  }
-
-  .form-create{
-    width: 80%;
-  }
-
-  .form-a{
-    width: 80%;
-  }
-
-  .have-account{
-    top: 412px;
-    padding-top: 20px;
-  }
-
-  .form-submit{
-    margin-top: 20px;
-    padding: 8px;
-  }
-
-  .contact-content__wrapper{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .information-contact{
-    order: 2;
-    margin-left: 54px;
-  }
-
-  .form-contact{
-    order: 1;
-    width: 75%;
-    padding: 20px 25px;
-    margin: 0 auto;
-    height: 40%;
-    box-shadow: none;
-    border: none;
-  }
-  .message{
-    height: 100px;
-  }
-  .name-input{
-    width: 46%;
-  }
-
-  .input-name{
-    width: 100%;
-    padding: 4px;
-  }
-
-  .email-input{
-    width: 46%;
-  }
-
-  .input-email{
-    width: 100%;
-    padding: 4px;
-  }
-  .textArea{
-    width: 98%;
-    margin: 7px;
-    height: 100%;
-  }
-  .credits{
-    order: 3;
-    width: 85%;
-    margin-left: 54px;
-    margin-top: 20px;
-  }
-
 }
-@media only screen and (max-width: 20em){
-  .wrap-card{
-    padding-bottom: 12px;
-    padding-top: 10px;
-  }
-  .findMore{
-    margin-top: 24%;
-  }
 
-  .contact-footer {
-    width: 50%
-    ;
-  }
-  .form-submit {
-    margin-top: 20px;
-    padding: 8px;
-    margin-top: 67%;
-    border-radius: 50px;
-    width: 46%;
-}
-}

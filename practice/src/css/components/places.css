@@ -1,0 +1,146 @@
+.location-image {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+  }
+
+  .location-mobile{
+    display: none;
+}
+  
+  .place-title {
+    margin: 30px 0 0;
+    color: var(--nav-bg);
+  }
+  
+  .location {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .name-location {
+    width: 141px;
+    height: 27px;
+    font-size: 18px;
+    text-align: center;
+    color: var(--nav-bg);
+  }
+  
+  
+  .location-image__wrapper {
+    display: grid;
+    grid-template-columns:20% 20% 20%;
+    grid-template-rows: 47% 54%;
+    margin: 0 auto;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  @media screen and (max-width:1200px) {
+    .location-image__wrapper{
+      display: grid;
+      grid-template-columns: 24% 24% 24%;
+      grid-template-rows: 47% 45%;
+      justify-content: center;
+      gap: 20px;
+    }
+    .location-mobile{
+      display: none;
+  }
+  }
+
+  @media screen and (max-width:767px) {
+    .location{
+      display: none;
+  }
+    .location-mobile{
+      display: block;
+      width: 40%;
+      margin: 18px auto;
+      padding: 10px;
+      border-radius: 48px;
+      border: 1px solid #4B4B4B;
+  }
+    .location-image__wrapper{
+      display: grid;
+      grid-template-rows: 30% 30% 30%;
+      grid-template-columns: 32% 32% ;
+      justify-content: center;
+      gap: 20px;
+    }
+  
+    .form-wrapper{
+      width: 75%;
+    }
+  
+    .form-create{
+      width: 75%;
+    }
+  
+    .form-a{
+      width: 80%;
+    }
+  
+    .have-account{
+  
+    }
+  
+    .form-submit{    
+      width: 40%;
+      padding: 12px;
+    }
+  
+    .contact-content__wrapper{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .information-contact{
+      order: 2;
+      margin-left: 54px;
+    }
+  
+    .form-contact{
+      order: 1;
+      width: 75%;
+      padding: 20px 25px;
+      margin: 0 auto;
+      height: 40%;
+      box-shadow: none;
+      border: none;
+    }
+    .message{
+      height: 100px;
+    }
+    .name-input{
+      width: 46%;
+    }
+  
+    .input-name{
+      width: 100%;
+      padding: 4px;
+    }
+  
+    .email-input{
+      width: 46%;
+    }
+  
+    .input-email{
+      width: 100%;
+      padding: 4px;
+    }
+    .textArea{
+      width: 98%;
+      margin: 7px;
+      height: 100%;
+    }
+  
+  
+    .credits{
+      order: 3;
+      width: 85%;
+      margin-left: 54px;
+      margin-top: 20px;
+    }
+  }
