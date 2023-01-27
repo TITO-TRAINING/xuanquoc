@@ -131,6 +131,13 @@
     padding: 14px;
   }
 
+  .submit-contact:hover{
+    background-color: var(--nav-bg);
+    color: var(--text-white);
+    cursor: pointer;
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
+  }
   .credits{
     width: 27%;
     margin-left: 57px;

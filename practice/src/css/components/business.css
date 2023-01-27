@@ -39,7 +39,11 @@
     position: relative;
     height: 52px;
 }
-
+.about-slider__icon:hover{
+    background-color: var(--nav-bg);
+    color: var(--text-white);
+    cursor: pointer;
+}
 .content-business {
     width: 60%;
     font-family: Roboto;

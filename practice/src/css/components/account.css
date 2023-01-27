@@ -66,6 +66,9 @@
     color: var(--color-logo);
     text-decoration: underline;
   }
+  .have-account:hover{
+    cursor: pointer;
+  }
   
   .form-submit {
     background-color: var(--color-logo);
@@ -75,6 +78,13 @@
     border-radius: 50px;
     margin: 36px auto;
     font-size: 16px;
+  }
+  .form-submit:hover{
+    background-color: var(--text-white);
+    color: var(--nav-bg);
+    cursor: pointer;
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
   }
 
   @media screen and (max-width:1200px){

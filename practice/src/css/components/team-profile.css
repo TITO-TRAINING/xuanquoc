@@ -34,8 +34,6 @@
   .job {
     padding: 10px 0;
   }
-
-
   @media screen and (max-width: 1200px) {
     .team{
       display: flex;
