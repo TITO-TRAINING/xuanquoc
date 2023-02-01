@@ -39,11 +39,10 @@
         <div class="footer-bottom__link">
           <div class="name-company">© 2016 Hofmann UI Kit</div>
           <div class="footer-page text1__tablet">
-            <div class="pageName text1__tablet">HOME</div>
-            <div class="pageName text1__tablet">SERVICES</div>
-            <div class="pageName text1__tablet">TEAM</div>
-            <div class="pageName text1__tablet">PORTFOLIO</div>
-            <div class="pageName text1__tablet">CONTACT</div>
+            <include src="../components/list.html" locals='{
+              "list": "[`HOME`, `SERVICES`, `TEAM`, `PORTFOLIO`, `CONTACT`]",
+              "class": "pageName text1__tablet"
+            }'></include>
           </div>          
           <img src="../assets/images/desktop/go-top-button.png" alt="" class="goTop">
         </div>

@@ -99,8 +99,6 @@ main {
   color: var(--nav-bg);
   margin: 24px auto;
 }
-
-
  .purchase:hover {
   background-color: var(--text-white);
   color: var(--nav-bg);

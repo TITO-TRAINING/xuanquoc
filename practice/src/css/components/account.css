@@ -8,6 +8,7 @@
     background-repeat: no-repeat;
     padding-bottom: 20px;
     background-size: 100% 100%;
+    background-position: center center;
     position: relative;
   }
   
@@ -88,6 +89,10 @@
   }
 
   @media screen and (max-width:1200px){
+
+    .form-wrapper{
+      width: 50%;
+    }
     .contact{
       width: 100%;
     }
@@ -176,9 +181,16 @@
     .title-account{
       font-size: 24px;
   }
+
+  .form-wrapper{
+    width: 75%;
+  }
     
-    .have-account{
+  .have-account{
       font-size: 12px;
       text-align: center;
-    }
+  }
+  .form-submit {
+    padding: 6px;
+  }
   }

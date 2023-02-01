@@ -2,10 +2,10 @@
     <div class="container">
       <div class="place-title title--main  title--main__tablet">Places</div>
       <div class="location">
-        <div class="name-location">SAN FRANCISCO</div>
-        <div class="name-location">SOUTH LILIANA</div>
-        <div class="name-location">BLICK VIEW</div>
-        <div class="name-location">NEW RAVEN</div>
+        <include src="../components/list.html" locals='{
+          "list": "[`SAN FRANCISCO`, `SOUTH LILIANA`, `BLICK VIEW`, `NEW RAVEN`]",
+          "class": "name-location"
+        }'></include>
       </div>
       <select class="location-mobile">
         <option class="name-location" >SAN FRANCISCO</option>
