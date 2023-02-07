@@ -2,9 +2,9 @@
   "name": "practice-html",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "parcel src/page/index.html"
+    "start": "parcel src/page/index.html",
+     "build": "parcel build src/page/index.html"
   },
   "keywords": [],
   "author": "",
